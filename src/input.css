@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SanFrancisco";
+  src: url("/fonts/SanFrancisco.woff") format("woff"),
+    url("/fonts/SanFrancisco.tff") format("truetype");
+}
+
+@font-face {
+  font-family: "SanFrancisco-Light";
+  src: url("/fonts/SanFrancisco-light.ttf") format("woff"),
+    url("/fonts/SanFrancisco-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SanFrancisco-Medium";
+  src: url("/fonts/SanFrancisco-medium.ttf") format("woff"),
+    url("/fonts/SanFrancisco-medium.ttf") format("truetype");
+}
+
+@layer base {
+  html {
+    font-family: SanFrancisco, sans-serif;
+  }
+}
