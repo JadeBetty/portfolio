@@ -5,20 +5,40 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>JadeBetty - Home</title>
-	<link rel="stylesheet" href="/src/input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="ml-80 mr-80 mt-12">
-    <div class="logo">
-      <p>
-        <img src="images/favicon.png" class="w-8 rounded-full inline ml-4" />
-        JadeBetty
-      </p>
-
-      <h1>Hey there! I'm JadeBetty</h1>
+  <body class="bg-background">
+    <div class="flex mt-8 ml-[23rem] text-text" id="headers">
+      <a href="#" class="text-3xl">JadeBetty</a>
+      <div class="underline mt-1 ml-[50rem] text-lg"><a href="#">Home</a></div>
+      <div class="mt-1 ml-10 text-lg"><a href="blogs">Blogs</a></div>
+      <div class="mt-1 ml-10 text-lg">
+        <a href="https://github.com/JadeBetty ">Github</a>
+      </div>
     </div>
+
+    <div id="body" class="flex items-start justify-between mt-[15rem] ml-[23rem] text-text">
+      <div>
+          <p id="hello-text" class="text-4xl font-medium">
+            Hey there! I'm <span class="underline text-[#4EC2A7] underline-offset-8">JadeBetty</span>
+          </p>
+          <p id="description" class="font-[550] mt-[0.75rem] text-md max-w-md">
+            A self taught programmar who knows his way into JavaScript.
+            <br>
+            <br>
+            I'm a junior-high school programmer who is interested in computers, games Uncharted 4 being my favorite.
+          </p>
+      </div>  
+      <img src="/public/images/favicon.png" class="w-[250px] rounded-full h-[250px]">
+  </div>
+  
   </body>
 </html>
