@@ -16,29 +16,50 @@
     />
   </head>
   <body class="bg-background">
-    <div class="flex mt-8 ml-[23rem] text-text" id="headers">
+    <div class="flex max-w-[75rem] text-text m-auto pt-10" id="headers">
       <a href="#" class="text-3xl">JadeBetty</a>
-      <div class="underline mt-1 ml-[50rem] text-lg"><a href="#">Home</a></div>
-      <div class="mt-1 ml-10 text-lg"><a href="blogs">Blogs</a></div>
-      <div class="mt-1 ml-10 text-lg">
-        <a href="https://github.com/JadeBetty ">Github</a>
+      <div
+        class="underline mt-1 ml-[50rem] text-lg transition-all hover:scale-110 active:scale-90 ease-in-out"
+      >
+        <a href="#" class="hover:transition hover:ease-out">Home</a>
+      </div>
+      <div
+        class="mt-1 ml-10 text-lg transition-all hover:scale-110 active:scale-90 ease-in-out hover:underline"
+      >
+        <a href="blogs">Blogs</a>
+      </div>
+      <div
+        class="mt-1 ml-10 text-lg transition-all hover:scale-110 active:scale-90 ease-in-out hover:underline"
+      >
+        <a href="https://github.com/JadeBetty">Github</a>
       </div>
     </div>
 
-    <div id="body" class="flex items-start justify-between mt-[15rem] ml-[23rem] text-text">
-      <div>
-          <p id="hello-text" class="text-4xl font-medium">
-            Hey there! I'm <span class="underline text-[#4EC2A7] underline-offset-8">JadeBetty</span>
-          </p>
-          <p id="description" class="font-[550] mt-[0.75rem] text-md max-w-md">
-            A self taught programmar who knows his way into JavaScript.
-            <br>
-            <br>
-            I'm a junior-high school programmer who is interested in computers, games Uncharted 4 being my favorite.
-          </p>
-      </div>  
-      <img src="/public/images/favicon.png" class="w-[250px] rounded-full h-[250px]">
-  </div>
-  
+    <div id="body" class="m-auto text-text flex max-w-[75rem] pt-[13rem]">
+      <div class="pt-[2rem] pr-[31rem]">
+        <p id="hello-text" class="text-4xl font-medium">
+          Hey there! I'm <span
+            class="underline text-[#4EC2A7] underline-offset-8">JadeBetty</span
+          >
+        </p>
+        <p
+          id="description"
+          class="font-[550] mt-[0.75rem] text-md max-w-md mb-[1rem]"
+        >
+          A self taught programmar who knows his way into JavaScript.
+          <br />
+          <br />
+          I'm a junior-high school programmer who is interested in computers, games
+          Uncharted 4 being my favorite.
+        </p>
+        <div
+          id="socialsbar"
+          class="bg-[#1d1e1a] w-[158px] h-[38px] rounded-full transition-all hover:scale-110 active:scale-90 ease-in-out text-center"
+        >
+            <p>abc</p>
+        </div>
+      </div>
+      <img src="/images/favicon.png" class="w-[250px] h-[250px]" />
+    </div>
   </body>
 </html>
