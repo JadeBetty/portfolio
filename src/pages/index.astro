@@ -1,78 +1,20 @@
 ---
-
+import BaseHeaders from "../components/baseheaders.astro";
+import Header from "../components/header.astro";
+import MainBody from "../components/mainbody.astro";
+import Projects from "../components/projects.astro";
 ---
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="author" content="JadeBetty">
-    <meta name="description" content="A simple, easy to use portfolio made by JadeBetty">
-    <title>JadeBetty - Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <BaseHeaders />
   </head>
   <body class="bg-background">
-    <div class="flex max-w-[75rem] text-text m-auto pt-10" id="headers">
-      <a href="#" class="text-3xl">JadeBetty</a>
-      <div
-        class="underline mt-1 ml-[50rem] text-lg transition-all hover:scale-110 active:scale-90 ease-in-out"
-      >
-        <a href="#" class="hover:transition hover:ease-out">Home</a>
-      </div>
-      <div
-        class="mt-1 ml-10 text-lg transition-all hover:scale-110 active:scale-90 ease-in-out hover:underline"
-      >
-        <a href="blogs">Blogs</a>
-      </div>
-      <div
-        class="mt-1 ml-10 text-lg transition-all hover:scale-110 active:scale-90 ease-in-out hover:underline"
-      >
-        <a href="https://github.com/JadeBetty/portfolio">Github</a>
-      </div>
-    </div>
-
-    <div id="body" class="m-auto text-text flex max-w-[75rem] pt-[13rem]">
-      <div class="pt-[2rem] pr-[31rem]">
-        <p id="hello-text" class="text-4xl font-medium">
-          Hey there! I'm <span
-            class="underline text-[#4EC2A7] underline-offset-8">JadeBetty</span
-          >
-        </p>
-        <p
-          id="description"
-          class="font-[550] mt-[0.75rem] text-md max-w-md mb-[1rem]"
-        >
-          A self taught programmer who knows his way into JavaScript.
-          <br />
-          <br />
-          I'm a junior-high school programmer who is interested in computers, with games like
-          Uncharted 4 being my favorite.
-          <br />
-          <span class="text-xs font-light">I use arch, btw</span>
-        </p>
-        <div
-          id="socialsbar"
-          class="bg-[#1d1e1a] w-[158px] h-[38px] rounded-full transition-all hover:scale-110 active:scale-90 ease-in-out items-center flex"
-        >
-            <a href="https://github.com/JadeBetty">
-              <img src="/images/github.svg" class="w-[24px] h-[24px] ml-5">
-            </a>
-            <a href="https://discord.com/users/758617912566087681">
-              <img src="/images/discord.svg" class="w-[24px] h-[24px] ml-5">
-            </a>
-            <a href="https://twitter.com/jadebetty69">
-              <img src="/images/twitter.svg" class="w-[24px] h-[24px] ml-5">
-            </a>
-        </div>
-      </div>
-      <img src="/images/favicon.png" class="w-[250px] h-[250px] rounded-full" />
-    </div>
+    <Header />
+    <MainBody />
+    <!-- <Projects
+      {owner: "smex", repo: "teafluff", description: "e", language: "js"}
+    /> -->
+    <Projects owner="sex" repo="teaf" description="a moder" language="js"/>
   </body>
 </html>
