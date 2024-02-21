@@ -2,19 +2,8 @@
 import BaseHeaders from "../components/baseheaders.astro";
 import Header from "../components/header.astro";
 import MainBody from "../components/mainbody.astro";
-import Project from "../components/project.astro";
-
-interface Repo {
-  owner: string;
-  repo: string;
-  description: string;
-  language: string;
-}
-const pinsrepo = (await (
-  await fetch(
-    "https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=jadebetty"
-  )
-).json()) as Repo[];
+import Projects from "../components/projects.astro";
+import Footer from "../components/footer.astro"
 ---
 
 <html lang="en">
@@ -24,11 +13,6 @@ const pinsrepo = (await (
   <body class="bg-background">
     <Header />
     <MainBody />
-    <div class="py-[29rem] px-[34.6rem]">
-      <p class="text-text text-4xl font-medium m-auto w-[140px] h-[43px] mb-12">Projects</p>
-      <div id="projects" class="grid grid-cols-2 gap-y-16 w-[840px] h-[393px]">
-        {pinsrepo.map((repo) => <Project {...repo} />)}
-      </div>
-    </div>
+    <Projects />
   </body>
 </html>

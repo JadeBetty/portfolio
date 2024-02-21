@@ -1,0 +1,35 @@
+---
+import Project from "../components/project.astro";
+interface Repo {
+  owner: string;
+  repo: string;
+  description: string;
+  language: string;
+}
+const pinsrepo = (await (
+  await fetch(
+    "https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=jadebetty"
+  )
+).json()) as Repo[];
+---
+
+<!-- <div class="py-[30rem] lg:py-[29rem] lg:px-[34.6rem]">
+  <p class="text-text text-3xl font-medium m-auto w-[140px] h-[43px] mb-12 lg:text-4xl">
+    Projects
+  </p>
+   <div id="projects" class="grid grid-cols-1 gap-y-5 justify-center m-auto lg:grid-cols-2 ">
+
+  </div>
+
+  <div class="flex flex-col flex-wrap justify-center">
+    {pinsrepo.map((repo) => <Project {...repo} />)}
+  </div>
+</div> -->
+<div class="flex">
+  <p class="text-text text-3xl font-medium lg:text-4xl">Projects</p>
+  <div class="flex flex-col flex-wrap gap-5">
+    {pinsrepo.map((repo) => <Project {...repo} />)}
+  </div>
+</div>
+
+<!-- grid grid-cols-1 gap-y-5 m-auto lg:grid-cols-2  -->

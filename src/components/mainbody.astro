@@ -2,9 +2,12 @@
 import Socialsbar from "./socialsbar.astro";
 ---
 
-<div id="body" class="hidden sm:flex m-auto text-text max-w-[75rem] pt-[13rem]">
-  <div class="pt-[2rem] pr-[31rem]">
-    <p id="hello-text" class="text-4xl font-medium">
+<div
+  id="body"
+  class="text-text max-w-[25rem] pt-[10rem] m-auto flex lg:pt-[13rem] lg:max-w-[75rem]"
+>
+  <div class="pt-8 lg:pr-[33rem]">
+    <p id="hello-text" class="text-3xl font-medium lg:text-4xl lg:w-[448px]">
       Hey there! I'm <span class="underline text-[#4EC2A7] underline-offset-8"
         >JadeBetty</span
       >
@@ -19,52 +22,12 @@ import Socialsbar from "./socialsbar.astro";
       I'm a junior-high school programmer who is interested in computers, with games
       like Uncharted 4 being my favorite.
       <br />
-      <span class="text-xs font-light">I use arch, btw</span>
+      <span class="text-xs font-light">I use Windows, btw</span>
     </p>
     <Socialsbar />
   </div>
-  <img src="/images/favicon.png" class="w-[250px] h-[250px] rounded-full" />
-</div>
-
-<div id="body" class="flex sm:hidden m-auto text-text w-fit mt-[23px]">
-  <div>
-    <p id="hello-text" class="text-xl font-medium w-[290px] m-auto">
-      Hey there! I'm <span class="underline text-[#4EC2A7] underline-offset-8"
-        >JadeBetty</span
-      >
-    </p>
-    <p id="description" class="font-[550] text-sm max-w-[18rem] m-auto">
-      A self taught programmer who knows his way into JavaScript.
-      <br />
-      <br />
-      I'm a junior-high school programmer who is interested in computers, with games
-      like Uncharted 4 being my favorite.
-      <br />
-      <span class="text-xs font-light">I use arch, btw</span>
-    </p>
-    <div class="w-[158px] h-[38px] m-auto pt-5">
-      <Socialsbar />
-    </div>
-  </div>
-
-  <!-- <div class="pt-[2rem] pr-[31rem]">
-    <p id="hello-text" class="text-4xl font-medium">
-      Hey there! I'm <span class="underline text-[#4EC2A7] underline-offset-8"
-        >JadeBetty</span
-      >
-    </p>
-    <p
-      id="description"
-      class="font-[550] mt-[0.75rem] text-md max-w-md mb-[1rem]"
-    >
-      A self taught programmer who knows his way into JavaScript.
-      <br />
-      <br />
-      I'm a junior-high school programmer who is interested in computers, with games
-      like Uncharted 4 being my favorite.
-      <br />
-      <span class="text-xs font-light">I use arch, btw</span>
-    </p>
-    <Socialsbar />
-  </div> -->
+  <img
+    src="/images/favicon.png"
+    class="hidden w-[250px] h-[250px] rounded-full lg:inline"
+  />
 </div>
