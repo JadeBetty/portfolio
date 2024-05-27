@@ -1,3 +1,8 @@
+---
+const data = Astro.props
+---
+
+
 <header class="text-text m-auto flex flex-col pt-8 w-52 lg:flex-row lg:w-[75rem]" id="headers">
   <div>
     <a href="/" class="flex items-center gap-3 text-2xl">
@@ -7,8 +12,8 @@
   </div>
 
   <div class="mt-1 flex text-base lg:ml-auto">
-    <a href="/" class="underline transition-all duration-300 ease-in-out hover:scale-110 active:scale-90">Home</a>
-    <a href="/blogs" class="ml-5 transition-all duration-300 ease-in-out hover:scale-110 hover:underline active:scale-90">Blogs</a>
+    <a href={data.firstlink} class="underline transition-all duration-300 ease-in-out hover:scale-110 active:scale-90">{data.firstname}</a>
+    <a href={data.secondlink} class="ml-5 transition-all duration-300 ease-in-out hover:scale-110 hover:underline active:scale-90">{data.secondname}</a>
     <a href="https://github.com/JadeBetty/portfolio" target="_blank" class="ml-5 transition-all duration-300 ease-in-out hover:scale-110 hover:underline active:scale-90">Github</a>
   </div>
 </header>

@@ -1,5 +1,5 @@
 ---
-
+const { link, description } = Astro.props
 ---
 
 <meta charset="utf-8" />
@@ -8,9 +8,9 @@
 <meta name="author" content="JadeBetty" />
 <meta
   name="description"
-  content="A simple, easy to use portfolio made by JadeBetty"
+  content={description}
 />
-<title>JadeBetty - Home</title>
+<title>JadeBetty - {link}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
