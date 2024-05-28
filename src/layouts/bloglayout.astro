@@ -3,7 +3,7 @@ import BaseHeaders from "../components/baseheaders.astro";
 import Header from "../components/header.astro";
 
 const {
-  content: { basetitle, description, pubDate },
+  content: { title, description, pubDate },
 } = Astro.props;
 
 const date = new Date(pubDate).toLocaleDateString("en-us", {
@@ -12,7 +12,9 @@ const date = new Date(pubDate).toLocaleDateString("en-us", {
   day: "numeric",
 });
 
-const title = basetitle + " - Blogs"
+const realtitle = "Blogs - " + title
+
+console.log(Astro.props)
 
 ---
 
@@ -22,7 +24,7 @@ const title = basetitle + " - Blogs"
   </head>
   <body class="bg-background text-text">
     <Header firstlink="/blogs" firstname="Blogs" secondlink="/" secondname="Portfolio"/>
-    <article class="flex justify-center text-xs" >
+    <article class=" mx-96 my-12 text-sm" >
         <slot />
     </article>
   </body>
