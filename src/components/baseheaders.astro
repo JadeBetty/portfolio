@@ -10,14 +10,14 @@ const { link, description } = Astro.props
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content=`JadeBetty - ${description}`  />
-<meta property="twitter:description" content={description} />
+<meta property="twitter:title" content=`JadeBetty - ${link}`  />
+<meta property="twitter:description" content={link} />
 <meta property="twitter:image" content="/images/banner.png" />
 
 
 <meta
   name="description"
-  content={description}
+  content={link}
 />
 <title>JadeBetty - {link}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
