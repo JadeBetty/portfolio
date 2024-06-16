@@ -102,8 +102,7 @@ On 2023, he released the Album "Alive" that contains 12 songs.
 Take care was his biggest project yet.
 
 
-And also this not finished entirely yet. I don't have the time to fix all of this and I don't have the motivation to fix the css properties of this blog post.
-Peace out, JadeBetty.
+### And also this not finished entirely yet. I don't have the time to fix all of this and I don't have the motivation to fix the css properties of this blog post.  Peace out, JadeBetty.
 
 
 

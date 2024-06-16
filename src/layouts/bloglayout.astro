@@ -1,6 +1,7 @@
 ---
 import BaseHeaders from "../components/baseheaders.astro";
 import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
 
 const {
   content: { title, description, pubDate, author },
@@ -23,20 +24,21 @@ const date = new Date(pubDate).toLocaleDateString("en-us", {
   <body class="bg-background text-text">
     <Header firstlink="/blogs" firstname="Blogs" secondlink="/" secondname="Portfolio"/>
 
-
-    <div class="items-center w-52 mx-[22rem] pt-4">
-      <a href="/" class="flex items-center gap-3 text-md">
+    <div class="max-w-[20rem] py-10 m-auto flex lg:max-w-[75rem]">
+      <a href="/" class="flex items-center gap-3 text-xl">
         <img src="/images/favicon.jpg" class="w-[46px] rounded-full" />
-        {author}
-        <br>
-        <span class="flex text-sm">{date}</span>
+        <div class="flex flex-col">
+          {author}
+          <span class="text-sm">{date}</span>
+        </div>
       </a>
-     
-
     </div>
+    
 
-    <article class=" mx-96 mb-12 mt-3 text-sm" >
+    <article class="prose prose-sm  max-w-[40rem] mx-[22rem]" >
         <slot />
     </article>
+
+    <Footer />
   </body>
 </html>

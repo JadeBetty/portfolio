@@ -1,15 +1,20 @@
 ---
 import BaseHeaders from "../components/baseheaders.astro";
 import Header from "../components/header.astro";
+
+Astro.redirect("/blogs/scm")
 ---
 
 <html lang="en">
   <head>
-    <BaseHeaders link="Blogs" />
+    <BaseHeaders link="Blogs" description="all of jadebetty blogs idk what else" banner="blogs.png" />
   </head>
   <body class="bg-background">
     <Header firstlink="/blogs" firstname="Blogs" secondlink="/" secondname="Portfolio"/>
     <div class="text-text flex justify-center items-center">
+
+
+      
         <!-- <p class="pt-[22rem] text-xl">Oh no! <br> Blogs page isn't finished yet. Please visit <a href="#" class="text-teal-200 underline ">Home</a> instead! -->
         <h1 class="text-xl pt-[22rem]">Since I am way too lazy, here are the blogs I have written, <a href="/blogs/scm" class="underline hover:text-neutral-700">Who is Liam Mccay?</a></h1>
     </div>

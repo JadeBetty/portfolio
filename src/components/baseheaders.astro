@@ -1,5 +1,5 @@
 ---
-const { link, description } = Astro.props
+const { link, description, banner } = Astro.props
 ---
 
 <meta charset="utf-8" />
@@ -12,12 +12,12 @@ const { link, description } = Astro.props
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content=`JadeBetty - ${link}`  />
 <meta property="twitter:description" content={link} />
-<meta property="twitter:image" content="/images/banner.png" />
+<meta property="twitter:image" content=`/images/${banner}` />
 
 
 <meta
   name="description"
-  content={link}
+  content={description}
 />
 <title>JadeBetty - {link}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
