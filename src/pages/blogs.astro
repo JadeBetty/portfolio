@@ -1,8 +1,7 @@
 ---
 import BaseHeaders from "../components/baseheaders.astro";
 import Header from "../components/header.astro";
-
-Astro.redirect("/blogs/scm")
+import Blog from "../components/blog.astro"
 ---
 
 <html lang="en">
@@ -13,7 +12,8 @@ Astro.redirect("/blogs/scm")
     <Header firstlink="/blogs" firstname="Blogs" secondlink="/" secondname="Portfolio"/>
     <div class="text-text flex justify-center items-center">
 
-
+      <Blog title="Sign Crushes Motorist" pubDate="2024-05-25" link="/blogs/scm" description="too lazy so idk just visit it for a moment then">
+      
       
         <!-- <p class="pt-[22rem] text-xl">Oh no! <br> Blogs page isn't finished yet. Please visit <a href="#" class="text-teal-200 underline ">Home</a> instead! -->
         <h1 class="text-xl pt-[22rem]">Since I am way too lazy, here are the blogs I have written, <a href="/blogs/scm" class="underline hover:text-neutral-700">Who is Liam Mccay?</a></h1>
