@@ -2,7 +2,7 @@
 layout: ../../layouts/bloglayout.astro
 title: 'Sign Crushes Motorist - A song writer that produces good music'
 pubDate: 2024-05-25
-description: 'Sign crushes motorist  is a song producer that has worked on many slowcore projects, he is known is Sign Crushes Motorist, Liam McCay, Birth day etc.'
+description: 'Sign crushes motorist is a song producer that has worked on many slowcore projects, he is known is Sign Crushes Motorist, Liam McCay, Birth day etc.'
 author: 'JadeBetty'
 tags: ["Music", "Slowcore"]
 ---
