@@ -32,7 +32,7 @@ He stated that Moon Water was his worst project in his Instagram on September 20
 
   
 
-- In 2022, he released the second album under the name of "Take Care".
+## In 2022, he released the second album under the name of "Take Care".
 
   
 
