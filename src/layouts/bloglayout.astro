@@ -22,9 +22,9 @@ const date = new Date(pubDate).toLocaleDateString("en-us", {
     <BaseHeaders link={title} description={description} banner="blogs.png"/>
   </head>
   <body class="bg-background text-text">
-    <Header firstlink="/blogs" firstname="Blogs" secondlink="/" secondname="Portfolio"/>
+    <Header firstlink="/blogs" firstname="Blogs" secondlink="/" secondname="Portfolio" showprofile="false"/>
 
-    <div class="max-w-[29rem] py-5 md:py-10 m-auto flex lg:max-w-[75rem]">
+    <div class="max-w-[10rem] py-10 md:py-10 m-auto flex lg:max-w-[75rem]">
       <a href="/" class="flex items-center gap-3 text-xl">
         <img src="/images/favicon.jpg" class="w-[46px] rounded-full" />
         <div class="flex flex-col">
@@ -35,7 +35,7 @@ const date = new Date(pubDate).toLocaleDateString("en-us", {
     </div>
     
 
-    <article class="prose prose-sm lg:max-w-[40rem] lg:mx-[22rem] mx-10" >
+    <article class="prose prose-sm lg:max-w-[70rem] lg:mx-[22rem] mx-10" >
         <slot />
     </article>
 
