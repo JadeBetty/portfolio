@@ -1,22 +1,11 @@
-<!-- <header class="text-text m-auto flex flex-col pt-8 w-52 lg:flex-row lg:w-[75rem]" id="headers">
-    <div>
-      <a href="/" class="flex items-center gap-3 text-3xl">
-        <img src="/images/favicon.png" class="w-[50px] rounded-full lg:hidden" />
-        JadeBetty
-      </a>
-    </div>
-  
-    <div class="mt-1 flex text-xl lg:ml-auto">
-      <a href="/" class="underline transition-all duration-300 ease-in-out hover:scale-110 active:scale-90">Home</a>
-      <a href="/blogs" class="ml-5 transition-all duration-300 ease-in-out hover:scale-110 hover:underline active:scale-90">Blogs</a>
-      <a href="https://github.com/JadeBetty/portfolio" target="_blank" class="ml-5 transition-all duration-300 ease-in-out hover:scale-110 hover:underline active:scale-90">Github</a>
-    </div>
-  </header> -->
-  
-
+---
+const data = Astro.props;
+console.log(data)
+---
 
 <footer class="text-text text-center mt-40 mb-20">
     <h2 class="text-xl pt-3">JadeBetty</h2>
+    <h2 class={`text-xl pt-3 ${data.aviation ? 'block' : 'hidden'}`}>this aviation page is not done yet </h2>
     <p class="text-base pt-3">© 2024 - JadeBetty<br><a href="/license" class="underline hover:no-underline transition-all duration-300 ">licenses stuff</a></p>
     
 </footer>
