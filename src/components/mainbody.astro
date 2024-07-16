@@ -1,30 +1,58 @@
 ---
 import Socialsbar from "./socialsbar.astro";
+const data = Astro.props;
 ---
 
 <div
   id="body"
   class="text-text max-w-[20rem] pt-[10rem] m-auto flex lg:pt-[15rem] lg:max-w-[75rem]"
 >
-  <div class="pt-8 lg:pr-[33rem]">
+
+<div className={`lg:pr-[33rem] ${data.aviation ? 'pt-2' : 'pt-8'}`}>
     <p id="hello-text" class="text-2xl font-medium lg:text-4xl lg:w-[448px]">
       Hey there! I'm <span class="underline text-[#4EC2A7] underline-offset-8"
         >JadeBetty</span
       >
     </p>
 
-    <p
-      id="description"
-      class="font-[550] mt-[0.75rem] text-sm max-w-md mb-[1rem] md:text-md"
-    >
-      A self taught code writer.
-      <br />
-      <br />
-      I'm a junior-high school programmer who is interested in computers, and games
-      like Uncharted 4 being my favorite.
-      <br />
-      <span class="text-xs font-light">I use Windows and Debian, btw</span>
-    </p>
+    {
+      data.aviation === "true" ? (
+        <p
+          id="description"
+          class="font-[550] mt-[0.75rem] text-sm max-w-md mb-[1rem] md:text-md"
+        >
+          A plane spotter based out of Phnom Penh international Airport
+          (VDPP/PNH)
+          <br />
+          <br />
+I started aviation photography with a friend's help. I spot near the airport or at school with my Fujifilm X-T100 and 55-230mm II lens. I'm planning to upgrade to a Canon 70D with a 55-250mm IS STM or a Sigma 100-400mm
+          <br />
+          <span class="text-xs font-light mt-5">
+            Pro tip: Follow my Tiktok Account:{" "}
+            <a
+              href="https://tiktok.com/@khmer_aviation"
+              class="underline text-[#4EC2A7]"
+            >
+              khmer_aviation
+            </a>
+          </span>
+        </p>
+      ) : (
+        <p
+          id="description"
+          class="font-[550] mt-[0.75rem] text-sm max-w-md mb-[1rem] md:text-md"
+        >
+          A self taught code writer.
+          <br />
+          <br />
+          I'm a junior-high school programmer who is interested in computers,
+          and games like Uncharted 4 being my favorite.
+          <br />
+          <span class="text-xs font-light">I use Windows and Debian, btw</span>
+        </p>
+      )
+    }
+
     <Socialsbar />
   </div>
   <img
