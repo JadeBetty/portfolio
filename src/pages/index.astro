@@ -1,0 +1,23 @@
+---
+import BaseHeaders from "../components/baseheaders.astro";
+import Header from "../components/header.astro";
+import MainBody from "../components/mainbody.astro";
+import Footer from "../components/footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <BaseHeaders
+      link="Home"
+      description="a cool programmer"
+      banner="banner.png"
+    />
+  </head>
+  <body class="bg-background min-h-screen flex flex-col items-center justify-between py-8">
+    <div class="w-full max-w-2xl flex flex-col items-center gap-8">
+      <Header firstlink="/" />
+      <MainBody/>
+      <Footer />
+    </div>
+  </body>
+</html>

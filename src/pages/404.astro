@@ -1,0 +1,17 @@
+---
+import BaseHeaders from "../components/baseheaders.astro";
+import Header from "../components/header.astro";
+---
+
+<html lang="en">
+  <head>
+    <BaseHeaders link="Home" description="jadebetty - 404" banner="404banner.png"/>
+  </head>
+  <body class="bg-background text-text">
+    <Header firstlink="/" firstname="Home" secondlink="/blogs" secondname="Blogs"/>
+    <div class="pt-[22rem] text-2xl max-w-[20rem]  m-auto flex lg:pt-[15rem] lg:max-w-[75rem]">
+      <h1 class="text-2xl">cool, looks like the page doesn't exist for some reason. how about if you visit <a href="/" class="text-white-500 underline transition-all duration-300 ease-in-out hover:scale-110 active:scale-90"> portfolio </a> instead?</h1>
+
+    </div>
+  </body>
+</html>
