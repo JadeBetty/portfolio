@@ -1,6 +1,10 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
+export const metadata = {
+  title: "Home",
+};
+
 export default function Home() {
   const links = [
     { name: "JetPhotos", href: "https://jetphotos.com/photographer/443263" },

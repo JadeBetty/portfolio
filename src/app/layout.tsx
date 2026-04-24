@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -7,26 +6,16 @@ interface LayoutProps {
   params: { link: string; description: string; banner: string };
 }
 
-export async function generateMetadata({ params }: any): Promise<Metadata> {
-  const { link, description, banner } = params;
-  
-  return {
-    title: `JadeBetty - ${link}`,
-    description: description,
-    authors: [{ name: 'JadeBetty' }],
-    openGraph: {
-      title: `JadeBetty - ${link}`,
-      description: description,
-      images: [`/images/${banner}`],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: `JadeBetty - ${link}`,
-      description: description,
-      images: [`/images/${banner}`],
-    },
-  };
-}
+export const metadata = {
+  title: {
+    default: "JadeBetty",
+    template: "JadeBetty — %s", 
+  },
+  description: "i dont even know anymore",
+  icons: {
+    icon: "/images/favicon.jpg",
+  },
+};
 
 const inter = Inter({
   subsets: ['latin'],
