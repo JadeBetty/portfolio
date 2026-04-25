@@ -20,7 +20,7 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center gap-4 text-text text-md">
           {links.map((link) => (
             <a key={link.name} href={link.href} className="w-full max-w-xs">
-              <div className="flex items-center justify-center bg-[#12130e] h-12 w-full rounded-full text-center hover:bg-[#22241b] hover:text-white transition-all duration-300">
+               <div className="flex items-center justify-center bg-[#0a0a0a] h-12 w-full rounded-full text-center hover:bg-[#1a1a1a] hover:text-white transition-all duration-300">
                 {link.name}
               </div>
             </a>
