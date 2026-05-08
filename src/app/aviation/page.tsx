@@ -5,14 +5,10 @@ export const metadata = {
   title: "Home",
 };
 
-export default function Home() {
+export default function aviation() {
   const links = [
-    { name: "Discord", href: "https://discord.com/users/758617912566087681" },
-    { name: "Tiktok", href: "https://tiktok.com/@jadebetty_7261" },
-    {
-      name: "Musixmatch",
-      href: "https://www.musixmatch.com/profile/3vUCAMIiJQmjDoTq78_w0ZXfwkSRYiSbWdCBtOUXB4Q9fYEJNN1pxvW7MGTO2AJ0wo3pL4eLm7Cs9PYYMffryJ5ntos_pH-dhwk9d1WCG9Nv7bgsUPQH8RPJPohnlKboeseX8vrZAP2icbx-oMO-wrR_Txs",
-    },
+    { name: "JetPhotos", href: "https://jetphotos.com/photographer/443263" },
+    { name: "Tiktok", href: "https://tiktok.com/@khmer_aviation" },
     { name: "Email", href: "mailto:contact@jadebetty.tech" },
   ];
 
