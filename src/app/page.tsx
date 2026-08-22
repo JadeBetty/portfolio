@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import CyclingText from "@/components/cycling-text";
 
 export const metadata = {
   title: "in construction.",
@@ -27,11 +28,10 @@ export default function Home() {
             portfolio in construction
           </h2>
           <h2 className="font-mono text-sm tracking-widest text-gray-500 uppercase">
-            finished
+            finishing
           </h2>
-          <p className="font-serif text-6xl font-bold tracking-wide mt-2">
-            Soon.
-          </p>
+
+          <CyclingText text="Soon." intervalMs={150} />
 
           <p className="font-mono text-sm text-gray-300 mt-2">idk when tho</p>
           {/* {links.map((link) => ( */}
