@@ -13,7 +13,11 @@ export default function MainCard() {
     const updateTime = () => {
       const now = new Date();
       setCurrentTime(
-        now.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" }),
+        now.toLocaleTimeString("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+          timeZone: "Asia/Phnom_Penh",
+        }),
       );
     };
     updateTime();
@@ -21,7 +25,7 @@ export default function MainCard() {
     return () => clearInterval(interval);
   }, []);
 
-  const location = "Somewhere, Earth";
+  const location = "legend cinema";
 
   return (
     <motion.div
@@ -33,7 +37,7 @@ export default function MainCard() {
     >
       <Header
         username="jadebetty"
-        description="i don't even know anymore"
+        description="15, i kinda like audio..."
         time={currentTime}
         location={location}
       />

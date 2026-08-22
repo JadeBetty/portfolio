@@ -5,11 +5,24 @@ import Link from "next/link";
 import {
   FaDiscord,
   FaTiktok,
-  FaEnvelope,
+  FaRegEnvelope,
   FaTv,
   FaInstagram,
 } from "react-icons/fa";
 import { FaLetterboxd } from "react-icons/fa6";
+
+const FaSerializd = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 48 48"
+    className="w-5 h-5 fill-none stroke-current stroke-2 text-text/60"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="24" cy="24" r="21.5" />
+    <path d="M28.529 7.096a3 3 0 0 0-3.674 2.122L17.349 37.23a3 3 0 1 0 5.796 1.553L30.65 10.77a3 3 0 0 0-2.121-3.675m-2.401 5.099l-6.183 23.075" />
+  </svg>
+);
 
 const links = [
   {
@@ -40,13 +53,13 @@ const links = [
     name: "Serializd",
     handle: "JadeBetty",
     href: "https://srlzd.com/u/JadeBetty",
-    icon: FaTv,
+    icon: FaSerializd,
   },
   {
     name: "Email",
     handle: "contact@homekirk.dev",
     href: "mailto:contact@homekirk.dev",
-    icon: FaEnvelope,
+    icon: FaRegEnvelope,
   },
 ];
 
@@ -67,7 +80,7 @@ export default function LinkList() {
             rel="noopener noreferrer"
             className="flex items-center gap-4 py-3 px-2 rounded-xl hover:bg-white/20 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
           >
-            <span className="w-6 h-6 flex items-center justify-center text-white shrink-0">
+            <span className="w-6 h-6 flex items-center justify-center text-text/60 shrink-0">
               <link.icon className="w-5 h-5" />
             </span>
             <div className="flex items-center gap-2">

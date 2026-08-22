@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaRegClock, FaRegMap } from "react-icons/fa";
+import { FaRegClock, FaMap } from "react-icons/fa";
 
 interface HeaderProps {
   username: string;
@@ -32,6 +32,7 @@ export default function Header({
           sizes="(max-width: 768px) 96px, 112px"
           className="object-cover"
           priority
+          unoptimized
         />
       </div>
       <h1 className="mt-3 text-xl text-text font-roboto-slab">{username}</h1>
@@ -39,6 +40,10 @@ export default function Header({
       <div className="mt-3 flex items-center gap-4 text-xs text-text/60 font-jetbrains">
         <span className="flex items-center gap-2">
           <FaRegClock className="w-3 h-3" /> {time}
+        </span>
+
+        <span className="flex items-center gap-2">
+          <FaMap className="w-3 h-3" /> {location}
         </span>
       </div>
     </motion.div>
