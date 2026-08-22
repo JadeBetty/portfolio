@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 
 export const metadata = {
-  title: "Home",
+  title: "in construction.",
 };
 
 export default function Home() {
@@ -20,19 +20,30 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      {/*   <Header /> */}
       <main className="w-full px-6">
-        <div className="flex flex-col justify-center items-center gap-4 text-text text-md">
-          {links.map((link) => (
-            <a key={link.name} href={link.href} className="w-full max-w-xs">
-              <div className="flex items-center justify-center bg-[#0a0a0a] h-12 w-full rounded-full text-center hover:bg-[#1a1a1a] hover:text-white transition-all duration-300">
-                {link.name}
-              </div>
-            </a>
-          ))}
+        <div className="flex flex-col justify-center items-center gap-4 text-text">
+          <h2 className="font-mono text-xl tracking-tight text-gray-400 uppercase">
+            portfolio in construction
+          </h2>
+          <h2 className="font-mono text-sm tracking-widest text-gray-500 uppercase">
+            finished
+          </h2>
+          <p className="font-serif text-6xl font-bold tracking-wide mt-2">
+            Soon.
+          </p>
+
+          <p className="font-mono text-sm text-gray-300 mt-2">idk when tho</p>
+          {/* {links.map((link) => ( */}
+          {/*   <a key={link.name} href={link.href} className="w-full max-w-xs"> */}
+          {/*     <div className="flex items-center justify-center bg-[#0a0a0a] h-12 w-full rounded-full text-center hover:bg-[#1a1a1a] hover:text-white transition-all duration-300"> */}
+          {/*       {link.name} */}
+          {/*     </div> */}
+          {/*   </a> */}
+          {/* ))} */}
         </div>
       </main>
-      <Footer />
     </>
+    //   <Footer />
   );
 }

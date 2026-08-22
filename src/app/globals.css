@@ -3,7 +3,9 @@
 @theme {
   --color-background: #010101;
   --color-text: #fff;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --font-mono: var(--font-jetbrains), monospace;
+  --font-serif: var(--font-playfair), serif;
 }
 
 @layer base {
