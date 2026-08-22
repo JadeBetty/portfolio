@@ -13,6 +13,24 @@ import {
   Outfit,
   Work_Sans,
 } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "#e3deea",
+  viewportFit: "cover",
+  width: "device-width",
+  initialScale: 1,
+};
+
+export const metadata: Metadata = {
+  title: "links.jadebetty",
+  description: "list of socials",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "jadebetty",
+  },
+};
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -101,8 +119,8 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={fontVars} suppressHydrationWarning>
-      <body className="bg-background min-h-screen flex flex-col items-center justify-center p-4">
-        <div className="w-full flex flex-col items-center gap-10">
+      <body className="min-h-[100dvh] flex flex-col items-center justify-center p-4 sm:p-6 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
+        <div className="w-full max-w-screen-xl flex flex-col items-center">
           {children}
         </div>
       </body>

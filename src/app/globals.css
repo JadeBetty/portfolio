@@ -1,17 +1,51 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #010101;
-  --color-text: #fff;
+  --color-background: #e3deea;
+  --color-text: #2f2a33;
+  --color-border: #a14d5e;
+
+  --font-jetbrains: var(--font-jetbrains), monospace;
+  --font-roboto: var(--font-roboto), sans-serif;
+  --font-open-sans: var(--font-open-sans), sans-serif;
+  --font-jakarta: var(--font-jakarta), sans-serif;
+  --font-poppins: var(--font-poppins), sans-serif;
+  --font-lato: var(--font-lato), sans-serif;
+  --font-nunito: var(--font-nunito), sans-serif;
+  --font-roboto-slab: var(--font-roboto-slab), serif;
+  --font-rubik: var(--font-rubik), sans-serif;
+  --font-ubuntu: var(--font-ubuntu), sans-serif;
+  --font-outfit: var(--font-outfit), sans-serif;
+  --font-work-sans: var(--font-work-sans), sans-serif;
 
   --font-mono: var(--font-jetbrains), monospace;
-  --font-serif: var(--font-playfair), serif;
+  --font-serif: var(--font-roboto-slab), serif;
+  --font-sans: var(--font-roboto), sans-serif;
+}
+
+html {
+  background-color: var(--color-background);
+  background-image:
+    radial-gradient(
+      circle at 10% 30%,
+      rgba(255, 182, 193, 0.4) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 90% 70%,
+      rgba(255, 105, 180, 0.3) 0%,
+      transparent 50%
+    );
+  background-attachment: fixed;
+  min-height: 100%;
 }
 
 @layer base {
   body {
-    background-color: var(--color-background);
+    background-color: transparent;
     color: var(--color-text);
     -webkit-font-smoothing: antialiased;
+    min-height: 100dvh;
+    margin: 0;
   }
 }
