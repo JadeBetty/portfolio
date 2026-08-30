@@ -25,8 +25,6 @@ export default function MainCard() {
     return () => clearInterval(interval);
   }, []);
 
-  const location = "legend cinema";
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -37,9 +35,9 @@ export default function MainCard() {
     >
       <Header
         username="jadebetty"
-        description="15, i kinda like audio..."
+        description="15, i love arctic monkeys..."
         time={currentTime}
-        location={location}
+        location="legend cinema"
       />
       <hr className="my-4 border-white/30" />
       <LinkList />
