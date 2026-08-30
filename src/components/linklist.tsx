@@ -39,7 +39,7 @@ const links = [
   },
   {
     name: "Instagram",
-    handle: "jadebetty_7261",
+    handle: "jadebetty_694",
     href: "https://instagram.com/jadebetty694",
     icon: FaInstagram,
   },
