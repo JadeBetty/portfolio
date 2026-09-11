@@ -39,7 +39,7 @@ const links = [
   },
   {
     name: "Instagram",
-    handle: "jadebetty_694",
+    handle: "jadebetty_7261",
     href: "https://instagram.com/jadebetty694",
     icon: FaInstagram,
   },
@@ -57,8 +57,8 @@ const links = [
   },
   {
     name: "Email",
-    handle: "contact@homekirk.dev",
-    href: "mailto:contact@homekirk.dev",
+    handle: "jade@260611.xyz",
+    href: "mailto:jade@060611.xyz",
     icon: FaRegEnvelope,
   },
 ];
