@@ -39,7 +39,7 @@ const links = [
   },
   {
     name: "Instagram",
-    handle: "jadebetty_7261",
+    handle: "jadebetty_694",
     href: "https://instagram.com/jadebetty694",
     icon: FaInstagram,
   },
@@ -84,7 +84,9 @@ export default function LinkList() {
               <link.icon className="w-5 h-5" />
             </span>
             <div className="flex items-center gap-2">
-              <span className="font-ubuntu text-sm">@/{link.handle}</span>
+              <span className="font-ubuntu text-sm">
+                {link.name === "Email" ? link.handle : `@/${link.handle}`}
+              </span>
             </div>
           </Link>
         </motion.div>

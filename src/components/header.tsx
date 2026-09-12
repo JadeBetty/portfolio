@@ -32,7 +32,7 @@ export default function Header({
           sizes="(max-width: 768px) 96px, 112px"
           className="object-cover"
           priority
-          unoptimized
+          fetchPriority="high"
         />
       </div>
       <h1 className="mt-3 text-xl text-text font-roboto-slab">{username}</h1>

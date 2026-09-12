@@ -35,7 +35,7 @@ export default function MainCard() {
     >
       <Header
         username="jadebetty"
-        description="15, i love arctic monkeys..."
+        description="15, have a nice life!"
         time={currentTime}
         location="legend cinema"
       />
