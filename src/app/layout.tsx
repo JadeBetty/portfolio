@@ -23,7 +23,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "links.jadebetty",
+  title: "links - jadebetty",
   description: "list of socials",
   appleWebApp: {
     capable: true,

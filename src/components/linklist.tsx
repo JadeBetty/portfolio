@@ -10,6 +10,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { FaLetterboxd } from "react-icons/fa6";
+import { HiMiniPhoto } from "react-icons/hi2";
 
 const FaSerializd = () => (
   <svg
@@ -25,6 +26,12 @@ const FaSerializd = () => (
 );
 
 const links = [
+  {
+    name: "gallery",
+    handle: "gallery",
+    href: "https://1.260611.xyz",
+    icon: HiMiniPhoto,
+  },
   {
     name: "Discord",
     handle: "jadebetty",
